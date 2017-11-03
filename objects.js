@@ -1,10 +1,10 @@
 playList = {
   MJ: 'Billy Jean',
-  Maroon 5: 'Cold',
+  Maroon: 'Cold',
   Metallica: 'One'
-}
+};
 
-function updatePlaylist (playList, artist, song){
-  Object.assign({}, playList, [artist: song]);
-  return playList
+function updatePlaylist (playlist, artist, song){
+  playlist[artist] = song;
+  return playList;
 }
